@@ -1,0 +1,48 @@
+Dataset links:- https://drive.google.com/file/d/1AlZak8gC27ntWFR0-ZJ0tMxVWFac-XPf/view?usp=drive_link 
+
+Data description
+Basic Connection Features
+Duration: Length of time duration of the connection.
+Protocol_type: Protocol used in the connection.
+Service: Destination network service used.
+Flag: Status of the connection (Normal or Error).
+Src_bytes: Number of data bytes transferred from source to destination in a single connection.
+Dst_bytes: Number of data bytes transferred from destination to source in a single connection.
+Land: Indicator if source and destination IP addresses and port numbers are equal (1 if equal, 0 otherwise).
+Wrong_fragment: Total number of wrong fragments in this connection.
+Urgent: Number of urgent packets in this connection. Urgent packets are packets with the urgent bit activated.
+Content-Related Features
+Hot: Number of 'hot' indicators in the content, such as entering a system directory, creating programs, and executing programs.
+Num_failed_logins: Count of failed login attempts.
+Logged_in: Login status (1 if successfully logged in, 0 otherwise).
+Num_compromised: Number of 'compromised' conditions.
+Root_shell: Indicator if root shell is obtained (1 if yes, 0 otherwise).
+Su_attempted: Indicator if 'su root' command is attempted or used (1 if yes, 0 otherwise).
+Num_root: Number of 'root' accesses or operations performed as root in the connection.
+Num_file_creations: Number of file creation operations in the connection.
+Num_shells: Number of shell prompts.
+Num_access_files: Number of operations on access control files.
+Num_outbound_cmds: Number of outbound commands in an ftp session.
+Is_hot_login: Indicator if the login belongs to the 'hot' list, i.e., root or admin (1 if yes, 0 otherwise).
+Is_guest_login: Indicator if the login is a 'guest' login (1 if yes, 0 otherwise).
+Time-Related Traffic Features
+Count: Number of connections to the same destination host as the current connection in the past two seconds.
+Srv_count: Number of connections to the same service as the current connection in the past two seconds.
+Serror_rate: Percentage of connections that have activated the flag s0, s1, s2, or s3, among the connections aggregated in count.
+Srv_serror_rate: Percentage of connections that have activated the flag s0, s1, s2, or s3, among the connections aggregated in srv_count.
+Rerror_rate: Percentage of connections that have activated the flag REJ, among the connections aggregated in count.
+Srv_rerror_rate: Percentage of connections that have activated the flag REJ, among the connections aggregated in srv_count.
+Same_srv_rate: Percentage of connections that were to the same service, among the connections aggregated in count.
+Diff_srv_rate: Percentage of connections that were to different services, among the connections aggregated in count.
+Srv_diff_host_rate: Percentage of connections that were to different destination machines, among the connections aggregated in srv_count.
+Host-Based Traffic Features
+Dst_host_count: Number of connections having the same destination host IP address.
+Dst_host_srv_count: Number of connections having the same port number.
+Dst_host_same_srv_rate: Percentage of connections that were to the same service, among the connections aggregated in dst_host_count.
+Dst_host_diff_srv_rate: Percentage of connections that were to different services, among the connections aggregated in dst_host_count.
+Dst_host_same_src_port_rate: Percentage of connections that were to the same source port, among the connections aggregated in dst_host_srv_count.
+Dst_host_srv_diff_host_rate: Percentage of connections that were to different destination machines, among the connections aggregated in dst_host_srv_count.
+Dst_host_serror_rate: Percentage of connections that have activated the flag s0, s1, s2, or s3, among the connections aggregated in dst_host_count.
+Dst_host_srv_serror_rate: Percentage of connections that have activated the flag s0, s1, s2, or s3, among the connections aggregated in dst_host_srv_count.
+Dst_host_rerror_rate: Percentage of connections that have activated the flag REJ, among the connections aggregated in dst_host_count.
+Dst_host_srv_rerror_rate: Percentage of connections that have activated the flag REJ, among the connections aggregated in dst_host_srv_count.
